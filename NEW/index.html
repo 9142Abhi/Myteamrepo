@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+<style>
+  #navbar{
+    width: 80%;
+    display: flex;
+    gap:20px;
+    font-size: 22px;
+    justify-content:end;
+    margin: auto;
+    
+
+  }
+  #navbar>div:nth-child(1){
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  #navbar>div:nth-child(2){
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  #navbar>div:nth-child(3){
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  #navbar>a{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+  }
+  #navbar>div:nth-child(5){
+    padding: 10px;
+  }
+#menu{
+  width: 80%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4,25%);
+  grid-template-rows: repeat(3,1fr);
+  row-gap: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin: auto;
+  justify-content: center;
+}
+#menu>div{
+  margin: auto;
+  
+  padding: 10px;
+  
+}
+#menu>div>img{
+  width: 150px;
+  height: 200px;
+}
+#menu>div>p{
+  text-align: center;
+  font-size: 16px;
+}
+#menu>div>button{
+  text-align: center;
+  height: 3vh;
+  padding: 3px;
+  margin-left:10%;
+}
+#menu>div>button:hover{
+  background-color: teal;
+}
+
+  
+</style>
+  <body>
+    <div id="navbar">
+      <!--Add navbar divs here-->
+      <div id="login">Login</div>
+      <div id="signup">Signup</div>
+      <div id="products">Products</div>
+      
+      <!-- Link to bucket.html -->
+      <a href="bucket.html"><div id="bucket">Bucket</div></a>
+      <div id="coffee_count">
+
+        <!--Show total number of coffee added to bucket here, do not add anything only Total count. Not even "Count
+           - 5" but  only number like this "5" -->
+      </div>
+    </div>
+
+    <div id="menu">
+    
+      <!--Show coffee list here in grid format-->
+      <!-- add an add to bucket button to each item, give it HTML id as 'add_to_bucket' -->
+      
+    </div>
+  </body>
+</html>
+<script src="scripts/index.js"></script>
+
