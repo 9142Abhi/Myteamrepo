@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container{
+        width: 70%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,auto);
+        gap:0px 30px;
+    }
+    #container>div{
+        width: 100%;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    div>img{
+        width: 100%;
+        height: 50%;
+    }
+    div>p{
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+    #add{
+        padding: 10px;
+        border-radius: 5px;
+        border:none;
+        background-color: aquamarine;
+        font-weight: bold;
+        margin-left: 47%;
+        margin-bottom: 20px;
+    }
+    #add:hover{
+        cursor: pointer;
+        background-color: orange;
+        color:white;
+        
+    }
+</style>
+<body>
+    <a href="database.html"><button id="add">Add Movies</button></a>
+    <div id="container">
+
+    </div>
+</body>
+</html>
+<script src="index.js">
+</script>

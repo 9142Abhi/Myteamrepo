@@ -1,0 +1,57 @@
+
+        span{
+            width: 20%;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding:10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 4vh;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            font-weight: bold;
+            gap:10px;
+            color:red;
+            font-family: sans-serif;
+            background-color: darkcyan;
+        }
+        #winner{
+            text-transform: uppercase;
+            font-weight: lighter;
+            color:white;
+        }
+        #dice{
+            width: 400px;
+            margin: auto;
+            
+            
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:30px;
+            
+        }
+        #dice>div{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        button{
+            margin-top: 30px;
+            margin-left: 40%;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: orange;
+            border:none;
+            color:white;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        #btn:hover{
+            cursor: pointer;
+            background-color: aqua;
+            color:black;
+        }
+    

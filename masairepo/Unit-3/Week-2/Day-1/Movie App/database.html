@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 70%;
+            margin: auto;
+            padding: 10px;
+        }
+        input{
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid seagreen;
+            margin-left: 15px;
+        }
+        #submit{
+            padding: 10px 20px;
+            background-color: teal;
+
+        }
+        #submit:hover{
+            background-color: salmon;
+            color:white;
+            cursor: pointer;
+        }
+         #all{
+        padding: 10px;
+        border-radius: 5px;
+        border:none;
+        background-color: aquamarine;
+        font-weight: bold;
+        margin-left: 47%;
+        margin-bottom: 20px;
+    }
+    #all:hover{
+        cursor: pointer;
+        background-color: orange;
+        color:white;
+        
+    }
+    </style>
+</head>
+<body>
+    <a href="index.html"><button id="all">All Movies</button></a>
+    <form action="" onsubmit="showMovies(event)" id="form">
+        <input type="text" id="name" placeholder="Enter Movie Name">
+        <input type="date" id="release" placeholder="Enter Release Date">
+        <input type="url" id="poster" placeholder="Enter Poster URL">
+        <input type="text" id="rating" placeholder="Movie Rating">
+        <input type="submit" id="submit">
+        
+    </form>
+</body>
+</html>
+<script src="database.js">
+
+</script>
